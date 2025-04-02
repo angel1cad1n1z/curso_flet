@@ -3,7 +3,12 @@ import flet as ft
 def main(page: ft.Page):
     page.window.always_on_top= True
     # por padrão todas as alterações do page é importante que sejam feitas no arquivo principal(main)
-    page.bgcolor = "#ff0000"
+    
+    # page.window.title_bar_hidden = True #esconde a barra de títulos - dessa forma o título tbm não aparece
+    
+    # page.window.frameless = True # remove todo e qualquer componente da janela da aplicação
+    page.window.bgcolor=  ft.Colors.TRANSPARENT
+    page.bgcolor = ft.Colors.TRANSPARENT
         # opções:
             # "white"
             # ft.Colors.white (aqui tem as cores já pré-definidas)
