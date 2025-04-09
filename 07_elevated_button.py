@@ -50,18 +50,34 @@ def main(page: ft.Page):
     def button_cliked(e):
         # control = controle que ativa o evento do botão
         e.control.data += 1
-        text.value = f'botão acionado { e.control.data} vezes'
-        text.update()
+        text1.value = f'botão acionado { e.control.data} vezes'
+        text1.update()
         e.control.update()
         
     btn = ft.ElevatedButton(
-        text = "Botão contagem de cliques",
+        text = "+",
         on_click= button_cliked,
         data = 0,
     )
     
-    text = ft.Text()
-    page.add(btn, text)
+    text1 = ft.Text()
+    page.add(btn, text1)
+    
+    def button_cliked1(e):
+        # control = controle que ativa o evento do botão
+        e.control.data -= 1
+        text2.value = f'botão minimizado { e.control.data} vezes'
+        text2.update()
+        e.control.update()
+        
+    btn2 = ft.ElevatedButton(
+        text = "-",
+        on_click= button_cliked1,
+        data = 10,
+    )
+    
+    text2 = ft.Text()
+    page.add(btn2, text2)
     
 ft.app(target= main)
 
