@@ -13,15 +13,15 @@ def main(page: ft.Page):
     
     grid = ft.GridView(
         controls = [
-            ft.Image(src= f'https://picsum.photos/250/300?{num}', fit= ft.ImageFit.COVER) for num in range( 20 )],
+            ft.Image(src = f'https://picsum.photos/250/300?{num}', fit = ft.ImageFit.COVER) for num in range( 20 )],
         # runs_count= 2, #define quanto componentes terão por cada linha
-        padding= 5,
-        spacing= 15,
-        run_spacing= 15,
-        max_extent= 200, #aplica um tamanho máximo em pixels para cada componente - nesse caso o runs_count pode ser desconsiderado
-        expand= True, # ocupa todo o espaço disponível da app - com isso ele habilita o scroll
+        padding = 5,
+        spacing = 15,
+        run_spacing = 15,
+        max_extent = 200, #aplica um tamanho máximo em pixels para cada componente - nesse caso o runs_count pode ser desconsiderado
+        expand = True, # ocupa todo o espaço disponível da app - com isso ele habilita o scroll
         # auto_scroll= True,
-        child_aspect_ratio= 0.9, #pode-se usar a tabela acima  para usar os valores padrões ou editar da maneira que desejar
+        child_aspect_ratio = 0.9, #pode-se usar a tabela acima  para usar os valores padrões ou editar da maneira que desejar
         
     )
     page.add(grid)
