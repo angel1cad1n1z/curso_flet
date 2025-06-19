@@ -2,6 +2,7 @@ import flet as ft
 
 def main(page: ft.Page):
     page.window.always_on_top= True
+    
     col1 = ft.Column(
         controls=[
             ft.ElevatedButton(
