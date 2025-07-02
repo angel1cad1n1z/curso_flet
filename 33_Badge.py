@@ -17,7 +17,6 @@ def main(page: ft.Page):
             text="10",
             text_color=ft.Colors.WHITE,
             text_style=ft.TextStyle(size=40, weight=ft.FontWeight.BOLD),
-            large_size=70,
             padding=ft.padding.symmetric(vertical=10, horizontal=10),
             ),
     )
