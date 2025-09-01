@@ -1,6 +1,4 @@
 import flet as ft
-import datetime
-
 
 def main(page: ft.Page):
     page.window.always_on_top = True
