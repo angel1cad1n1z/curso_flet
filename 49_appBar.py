@@ -1,5 +1,4 @@
 import flet as ft
-import datetime
 
 
 def main(page: ft.Page):
