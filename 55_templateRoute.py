@@ -16,14 +16,16 @@ def main(page: ft.Page):
         if troute.match("/loja/:produto"):
             page.add(
                 ft.Text(
-                    value=f"Acessando página do produto:{troute.produto}",
+                    # tirei para não ficar vermelhinho mas precisa disso para funcionar
+                    # value=f"Acessando página do produto:{troute.produto}",
                     color=ft.Colors.BLACK,
                 )
             )
         elif troute.match("/loja/:produto/pedido/:id"):
             page.add(
                 ft.Text(
-                    value=f"Acessando página de compra do produto: {troute.produto}, com id: {troute.id}",
+                    # tirei para não ficar vermelhinho mas precisa disso para funcionar
+                    # value=f"Acessando página de compra do produto: {troute.produto}, com id: {troute.id}",
                     color=ft.Colors.BLACK,
                 )
             )
