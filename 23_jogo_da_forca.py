@@ -64,7 +64,7 @@ def main(page: ft.Page):
                     word.controls[pos] = letter_to_guess(letter)
             word.update()
         else:
-            # se perdeu aumenta o contador de erros
+            # se errar aumenta o contador de erros
             errors += 1
 
             if errors >= 6:
