@@ -1,7 +1,5 @@
 import flet as ft
 
-
-# tabelas dinâmicas
 def main(page: ft.Page):
     page.window.always_on_top = True
     page.padding = ft.padding.all(10)
